@@ -1,82 +1,18 @@
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 22 |     font-family:$font-stack;
+ *    |                 ^^^^^^^^^^^
+ *    '
+ *   sass/_index-before-content.scss 22:17  @import
+ *   sass/main.scss 4:9                     root stylesheet */
 
-#page {
-  margin: 0 auto;
-  min-width: 320px;
-}
-
-.header-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.header-container .logo {
-  width: 170px;
-  height: 30px;
-  align-self: center;
-  margin: 0 auto;
-}
-
-.restaurantcontainer {
-  background-color: #dbdbdb;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 15px;
-  width: 100%;
-}
-.restaurantcontainer .block {
-  background-color: white;
-  display: flex;
-  width: 90%;
-  margin: 0 auto;
-  height: 200px;
-  border-radius: 15px;
-  flex-direction: column;
-}
-.restaurantcontainer .block .block--image {
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-  height: 70%;
-  width: 100%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 22 \2502      font-family:$font-stack;\a    \2502                  ^^^^^^^^^^^\a    \2575 \a   sass/_index-before-content.scss 22:17  @import\a   sass/main.scss 4:9                     root stylesheet";
 }
-.restaurantcontainer .block .block__description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.restaurantcontainer .block .block__description .block__description-name {
-  margin: 0;
-}
-
-footer {
-  width: 100%;
-  background-color: #464646;
-  height: auto;
-  bottom: 0;
-  position: relative;
-}
-
-.footer__list--title {
-  margin: 0;
-  font-family: "shrikand";
-}
-
-.footer__list {
-  margin: 0;
-  color: white;
-  list-style: none;
-}
-
-/*# sourceMappingURL=style.css.map */

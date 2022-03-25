@@ -1,0 +1,61 @@
+header{
+    margin-bottom: 10px;
+
+    .header-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        
+
+        .logo {
+            width: 170px;
+            height: 30px;
+            align-self: center;
+            margin: 0 auto;
+        }
+    }
+}
+h2{
+    font-family:$font-stack;
+    font-size: 19px;
+}
+
+h3{
+    font-family: $font-stack;
+    font-size: 15px;
+    font-weight: 400px;
+    margin: 0;
+}
+
+h4{
+    font-family: $font-stack;
+    font-weight: 100;
+    font-size: 14px;
+    margin: 0;
+}
+.discover-info{
+    text-align: center;
+    margin:20px;
+    font-size: 16px;
+}
+#book{
+    .bookthemenu{
+        background-color: $background-color;
+       text-align: center;
+       margin: 30px;
+
+    }
+}
+.button_purple {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

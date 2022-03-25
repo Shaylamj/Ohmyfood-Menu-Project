@@ -1,6 +1,12 @@
-$primary-color:#9356DC;
-$secondary-color:#FF79DA;
-$tertiary-color:#99E2D0;
+@import '_colours';
+@import '_footer';
+@import '_mixins';
+@import '_index-before-content';
+@import '_index-content';
+
+$font-stack: 'Roboto', sans-serif;
+$border-radius: 15px !default;
+$box-shadow:  0 0.5rem 1.5rem rgba(#000, 0.15) !default;
 
 html, body {
     width: 100%;
@@ -10,83 +16,9 @@ html, body {
     overflow-x: hidden;
   }
   
-  #page {
+#page {
     margin: 0 auto;
     min-width: 320px;
-  }
-  
-.header-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    .logo {
-        width: 170px;
-        height: 30px;
-        align-self: center;
-        margin: 0 auto;
-    }
 }
-  
-.restaurantcontainer {
-    background-color: #dbdbdb;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 15px;
-    width: 100%;
-
-    .block {
-        background-color: white;
-        display: flex;
-        width: 90%;
-        margin: 0 auto;
-        height: 200px;
-        border-radius: 15px;
-        flex-direction: column;
-
-        .block--image {
-            object-fit: cover;
-            border-radius: 15px 15px 0 0;
-            height: 70%;
-            width: 100%;
-            display: block;
-        }
-
-        .block__description {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            .block__description-name {
-                margin: 0;
-            }
-        }
-    }
-}
-                
-  
-  footer {
-    width: 100%;
-    background-color: #464646;
-    height: auto;
-    bottom: 0;
-    position: relative;
-  }
-  
-  .footer__list--title {
-    margin: 0;
-    font-family: "shrikand";
-  }
-  
-  .footer__list {
-    margin: 0;
-    color: white;
-    list-style: none;
-  }
   
   

@@ -1,0 +1,46 @@
+.restaurantcontainer {
+    background-color: $background-color;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    .block {
+        box-shadow :$box-shadow;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        height: 205px;
+        border-radius: 15px;
+        flex-direction: column;
+        box-shadow: $box-shadow;
+       
+        
+
+        .block--image {
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+            height: 70%;
+            width: 100%;
+            display: block;
+        }
+
+        .block__description {
+            display: flex;
+            flex-direction: column;
+            row-gap:3px;
+            margin: auto;
+            width: 93%;
+
+
+            .block__description-name {
+                margin: 0;
+            }
+        }
+    }
+}
