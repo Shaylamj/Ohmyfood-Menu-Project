@@ -11,3 +11,15 @@
     
 
 }
+.new-label{
+    background: $tertiary;
+    color: darken($tertiary, 40%);
+    width: fit-content;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 23px;
+    border-radius:2px ;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}

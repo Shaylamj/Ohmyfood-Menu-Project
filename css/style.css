@@ -22,8 +22,15 @@ h4 {
   margin: 0;
 }
 
+h5 {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+}
+
 p {
   font-weight: 100;
+  padding: 0;
   font-size: 14px;
 }
 
@@ -59,7 +66,6 @@ li {
   color: #000;
   width: 85%;
   padding: 20px;
-  display: inline-block;
   font-size: 13px;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
 }
@@ -72,6 +78,20 @@ li {
   cursor: pointer;
 }
 
+.fa-solid {
+  color: #777777;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
+.fa-location-dot {
+  margin: 0;
+}
+
 .numbers {
   background: #9356DC;
   color: #fff;
@@ -82,6 +102,19 @@ li {
   align-self: center;
   position: relative;
   left: 10px;
+}
+
+.new-label {
+  background: #99E2D0;
+  color: #278870;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 23px;
+  border-radius: 2px;
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
 
 header {
@@ -102,9 +135,22 @@ header .header-container .logo {
   margin: 0 auto;
 }
 
+#location-bar {
+  background: #eeeeee;
+  padding: 5px 0 12px;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+  color: #2a2a2a;
+}
+
 .discover-info {
   text-align: center;
-  margin: 30px 30px 20px 30px;
+  margin: 0px 30px 20px 30px;
   font-size: 16px;
 }
 
@@ -114,7 +160,7 @@ header .header-container .logo {
 }
 #book .bookthemenu {
   text-align: center;
-  margin: 30px;
+  padding: 25px;
 }
 
 #howitworks {
@@ -161,6 +207,7 @@ header .header-container .logo {
   height: 205px;
   border-radius: 15px;
   flex-direction: column;
+  position: relative;
 }
 
 .block--image {
@@ -217,10 +264,16 @@ html, body {
 
 footer {
   width: 100%;
-  background-color: #464646;
+  background: #373737;
   height: auto;
   bottom: 0;
   position: relative;
+  min-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .footer__list--title {
@@ -228,9 +281,18 @@ footer {
 }
 
 .footer__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   color: white;
   list-style: none;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1330px) {
+  .footer__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

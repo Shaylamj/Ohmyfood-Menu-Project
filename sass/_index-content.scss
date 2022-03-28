@@ -21,9 +21,9 @@ $box-shadow:  0 0.5rem 1.5rem rgba(#000, 0.15) !default;
         height: 205px;
         border-radius: 15px;
         flex-direction: column;
+        position: relative;
     }
        
-        
 
     .block--image {
         object-fit: cover;

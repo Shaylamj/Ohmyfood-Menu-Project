@@ -2,3 +2,14 @@
     align-self: center;
     cursor: pointer;
 }
+.fa-solid{
+    color: darken($background, 50%);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.fa-store{
+    color: $primary;
+}
+.fa-location-dot{
+    margin: 0;
+}

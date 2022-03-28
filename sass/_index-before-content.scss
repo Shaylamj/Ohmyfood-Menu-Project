@@ -22,9 +22,19 @@ header{
         }
     }
 }
+#location-bar{
+    background: darken($background, 3%);
+    padding: 5px 0 12px;
+
+}
+.location-info{
+    @include centreflex; 
+    gap: 5%;
+    color: darken($background, 80%);
+}
 .discover-info{
     text-align: center;
-    margin:30px 30px 20px 30px;
+    margin:0px 30px 20px 30px;
     font-size: 16px;
 }
 #book{
@@ -32,8 +42,7 @@ header{
     padding-bottom: 40px;
         .bookthemenu{
          text-align: center;
-            margin: 30px;
-
+         padding: 25px;
         }
 }
 #howitworks{
