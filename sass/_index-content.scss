@@ -1,14 +1,17 @@
+
+$box-shadow:  0 0.5rem 1.5rem rgba(#000, 0.15) !default;
+
 .restaurantcontainer {
-    background-color: $background-color;
+    @include flex-column;
+    background-color: $background;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 15px;
     width: 100%;
-    margin-top: 10px;
-    padding-top: 30px;
-    padding-bottom: 50px;
+}
+.__title{
+    @include text-margin;
+}
+
 
     .block {
         box-shadow :$box-shadow;
@@ -18,29 +21,34 @@
         height: 205px;
         border-radius: 15px;
         flex-direction: column;
-        box-shadow: $box-shadow;
+    }
        
         
 
-        .block--image {
-            object-fit: cover;
-            border-radius: 15px 15px 0 0;
-            height: 70%;
-            width: 100%;
-            display: block;
-        }
-
-        .block__description {
-            display: flex;
-            flex-direction: column;
-            row-gap:3px;
-            margin: auto;
-            width: 93%;
-
-
-            .block__description-name {
-                margin: 0;
-            }
-        }
+    .block--image {
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+        height: 70%;
+        width: 100%;
+        display: block;
     }
+
+    .bottominfo{
+        margin: auto;
+        width: 93%;
+        @include flex-row;
+    }
+
+    .block__description {
+        @include text-leftflex;
+    }
+    
+
+    .block__description-name {
+        margin: 0;
+    }
+        
+
+.howitworks-title{
+    @include text-leftflex
 }

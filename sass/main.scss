@@ -1,24 +1,8 @@
-@import '_colours';
-@import '_footer';
-@import '_mixins';
-@import '_index-before-content';
-@import '_index-content';
+@import '__abstracts-dir';
+@import '__base-dir';
+@import '__components-dir';
+@import '__layout-dir';
 
-$font-stack: 'Roboto', sans-serif;
 $border-radius: 15px !default;
-$box-shadow:  0 0.5rem 1.5rem rgba(#000, 0.15) !default;
 
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-  }
-  
-#page {
-    margin: 0 auto;
-    min-width: 320px;
-}
-  
-  
+

@@ -1,0 +1,33 @@
+.btn_purple {
+    background: $primary;
+    background: linear-gradient(0deg, $primary 0%, $secondary 94%);
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    padding: 12px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $btn-size;
+    box-shadow: $box-shadow;
+}
+.hiw-btn-all{
+    display: flex;
+    flex-direction: row;
+}
+.hiw-btn{
+    background: $background;
+    border-radius: 20px;
+    border: none;
+    color: #000;
+    width: 85%;
+    padding: 20px;
+    display: inline-block;
+    font-size: $btn-size;
+    box-shadow: $box-shadow;
+        
+    &--purple{
+        background: lighten($primary, 35%)
+    }
+}

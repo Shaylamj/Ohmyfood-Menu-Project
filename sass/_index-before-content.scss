@@ -1,5 +1,9 @@
+
+
+
 header{
     margin-bottom: 10px;
+    box-shadow: $box-shadow;
 
     .header-container {
         width: 100%;
@@ -18,44 +22,33 @@ header{
         }
     }
 }
-h2{
-    font-family:$font-stack;
-    font-size: 19px;
-}
-
-h3{
-    font-family: $font-stack;
-    font-size: 15px;
-    font-weight: 400px;
-    margin: 0;
-}
-
-h4{
-    font-family: $font-stack;
-    font-weight: 100;
-    font-size: 14px;
-    margin: 0;
-}
 .discover-info{
     text-align: center;
-    margin:20px;
+    margin:30px 30px 20px 30px;
     font-size: 16px;
 }
 #book{
-    .bookthemenu{
-        background-color: $background-color;
-       text-align: center;
-       margin: 30px;
+    background-color: $background;
+    padding-bottom: 40px;
+        .bookthemenu{
+         text-align: center;
+            margin: 30px;
 
-    }
+        }
 }
-.button_purple {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+#howitworks{
+    @include padding-container;
+}
+
+.hiw-blocks_container{
+    background: #fff;
+    @include flex-column;
+    @include push--auto;
+    gap: 20px;
+    width: 90%;
+
+}
+.btn-container{
+    @include centreflex;
+    
 }

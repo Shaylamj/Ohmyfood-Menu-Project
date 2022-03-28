@@ -1,18 +1,236 @@
-/* Error: Undefined variable.
- *    ,
- * 22 |     font-family:$font-stack;
- *    |                 ^^^^^^^^^^^
- *    '
- *   sass/_index-before-content.scss 22:17  @import
- *   sass/main.scss 4:9                     root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 22 \2502      font-family:$font-stack;\a    \2502                  ^^^^^^^^^^^\a    \2575 \a   sass/_index-before-content.scss 22:17  @import\a   sass/main.scss 4:9                     root stylesheet";
+@font-face {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/shrikhand/v9/a8IbNovtLWfR7T7bMJwrGIKR8Ttcte1q.woff2) format("woff2");
 }
+h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 13px;
+  font-weight: 100;
+  margin: 0;
+}
+
+p {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+li {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.btn_purple {
+  background: #9356DC;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 94%);
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  padding: 12px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.hiw-btn-all {
+  display: flex;
+  flex-direction: row;
+}
+
+.hiw-btn {
+  background: #f6f6f6;
+  border-radius: 20px;
+  border: none;
+  color: #000;
+  width: 85%;
+  padding: 20px;
+  display: inline-block;
+  font-size: 13px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+.hiw-btn--purple {
+  background: #f2eafb;
+}
+
+.fa-heart {
+  align-self: center;
+  cursor: pointer;
+}
+
+.numbers {
+  background: #9356DC;
+  color: #fff;
+  border-radius: 50%;
+  height: fit-content;
+  font-size: 10px;
+  padding: 3px 6px;
+  align-self: center;
+  position: relative;
+  left: 10px;
+}
+
+header {
+  margin-bottom: 10px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+header .header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+header .header-container .logo {
+  width: 170px;
+  height: 30px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.discover-info {
+  text-align: center;
+  margin: 30px 30px 20px 30px;
+  font-size: 16px;
+}
+
+#book {
+  background-color: #f6f6f6;
+  padding-bottom: 40px;
+}
+#book .bookthemenu {
+  text-align: center;
+  margin: 30px;
+}
+
+#howitworks {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.hiw-blocks_container {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+  width: 90%;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.restaurantcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f6f6f6;
+  height: auto;
+  gap: 15px;
+  width: 100%;
+}
+
+.__title {
+  margin: 30px 0 0 15px;
+}
+
+.block {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  height: 205px;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.block--image {
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  height: 70%;
+  width: 100%;
+  display: block;
+}
+
+.bottominfo {
+  margin: auto;
+  width: 93%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.block__description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 3px;
+  margin: auto;
+  width: 93%;
+}
+
+.block__description-name {
+  margin: 0;
+}
+
+.howitworks-title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 3px;
+  margin: auto;
+  width: 93%;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+#page {
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+footer {
+  width: 100%;
+  background-color: #464646;
+  height: auto;
+  bottom: 0;
+  position: relative;
+}
+
+.footer__list--title {
+  font-family: Shrikhand, sans-serif;
+}
+
+.footer__list {
+  margin: 0;
+  color: white;
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */
