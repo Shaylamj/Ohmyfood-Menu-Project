@@ -1,0 +1,103 @@
+#menu-header{
+    z-index: 2;
+}
+    .header-menu-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        
+
+        .logo {
+            width: 170px;
+            height: 30px;
+            align-self: center;
+            margin: 0 auto;
+        }
+    }
+
+#block__description-name_menu{
+    padding-top: 30px;
+    font-family: Shrikhand, sans-serif !important;
+}
+.menu-mainimage{
+    object-fit: cover;
+    z-index: 1;
+    height: 50%;
+        width: 100%;
+
+}
+.menu-box{
+   border-radius: $menu-border; 
+   background: $background;
+   z-index: 2;
+   position: relative;
+   bottom: 50px;
+
+}
+.menu-title{
+    width: 50%;
+}
+.underline{
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 5%;
+}
+    .underline:after{
+        content: "";
+        @include abs-position (0, 0, -5px, 0);
+        width:40px;
+        border-bottom:2.5px solid $tertiary;
+}
+.menu-items{
+    border-radius: 10px;
+    border: none;
+    color: #000;
+    background-color: #fff;
+    width: 85%;
+    height: fit-content;
+    padding: 10px;
+    font-size: $btn-size;
+    box-shadow: $box-shadow;
+    z-index: 1;
+
+    &__main{
+        text-transform: capitalize;
+        width: 60%;
+        font-size: small;
+        font-weight: 500;
+        padding-bottom: 3px;
+ 
+    }
+    &__side{
+       @include flex-row;
+
+    }
+    &__price{
+        font-weight: 500;
+        font-size: 11px;
+    }
+}
+.menu-sides{
+    font-size: 11px;
+
+}
+.menu-info{
+    margin-left: 15px;
+    width: 89%;
+    gap:30px;
+    @include flex-row;
+    margin-bottom: 7%;
+}
+.menu-content{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 6%;
+    margin-bottom:12%;
+}

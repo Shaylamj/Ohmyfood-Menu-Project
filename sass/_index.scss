@@ -12,4 +12,11 @@ html, body {
     min-width: 320px;
 }
   
-  
+  a{
+      text-decoration: none;
+      color: #fff;
+      
+      a:hover{
+          color: $primary;
+      }
+  }

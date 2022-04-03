@@ -1,7 +1,7 @@
 
 
 
-header{
+#main-header{
     margin-bottom: 10px;
     box-shadow: $box-shadow;
 
@@ -53,6 +53,7 @@ header{
     background: #fff;
     @include flex-column;
     @include push--auto;
+    margin-top: 20px;
     gap: 20px;
     width: 90%;
 

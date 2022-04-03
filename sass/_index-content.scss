@@ -7,9 +7,27 @@ $box-shadow:  0 0.5rem 1.5rem rgba(#000, 0.15) !default;
     height: auto;
     gap: 15px;
     width: 100%;
+    padding:15% 0 15% 0
 }
+.dsktp-flex-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+@include breakpoint(desktop){
+    .restaurantcontainer{
+    flex-direction: row;
+    }
+    .dsktp-flex-cont{
+        width: 50%
+    }
+}
+
+
 .__title{
-    @include text-margin;
+    padding-left: 20px;
+    background: $background;
+    width: 100%;
 }
 
 
@@ -23,7 +41,11 @@ $box-shadow:  0 0.5rem 1.5rem rgba(#000, 0.15) !default;
         flex-direction: column;
         position: relative;
     }
-       
+    @include breakpoint(desktop){
+        .block{
+            height: 30%;
+        }
+    }
 
     .block--image {
         object-fit: cover;
@@ -31,9 +53,10 @@ $box-shadow:  0 0.5rem 1.5rem rgba(#000, 0.15) !default;
         height: 70%;
         width: 100%;
         display: block;
+        z-index: 1;
     }
 
-    .bottominfo{
+    .info{
         margin: auto;
         width: 93%;
         @include flex-row;
@@ -45,7 +68,9 @@ $box-shadow:  0 0.5rem 1.5rem rgba(#000, 0.15) !default;
     
 
     .block__description-name {
+        width: 60%;
         margin: 0;
+
     }
         
 

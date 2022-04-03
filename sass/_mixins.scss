@@ -14,7 +14,7 @@
 }
 
 @mixin text-margin {
-    margin: 30px 0 0 15px;
+    margin:5px 0 0 15px;
     
 }
 
@@ -24,7 +24,6 @@
     justify-content: center;
     
 }
-
 @mixin flex-column {
     display: flex;
     flex-direction: column;
@@ -42,3 +41,28 @@
     padding-bottom: 50px;
     
 }
+@mixin abs-position ($top, $right, $bottom, $left) {
+    position: absolute; 
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    
+}
+@mixin breakpoint($point) {
+    @if $point == large {
+       @media only screen and (min-width: 1366px) {
+          @content;
+       }
+    } 
+    @else if $point == desktop {
+       @media only screen and (min-width: 1024px) {
+          @content;
+       }
+    } 
+    @else if $point == tablet {
+       @media only screen and (min-width: 600px) {
+          @content;
+       }
+    }
+ }
