@@ -1,6 +1,5 @@
 
 $box-shadow:  0 0.5rem 1.5rem rgba(#000, 0.15) !default;
-
 .restaurantcontainer {
     @include flex-column;
     background-color: $background;
@@ -13,19 +12,6 @@ $box-shadow:  0 0.5rem 1.5rem rgba(#000, 0.15) !default;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    animation: 1s ease-in-out ;
-    animation-name: reveal-index;
-}
-@keyframes reveal-index{
-    0% {
-        transform: translatex(100px);
-        opacity: 0;
-    }
-    to{
-        transform: translatex(0);
-        opacity:1;
-        
-    }   
 }
 @include breakpoint(desktop){
     .restaurantcontainer{

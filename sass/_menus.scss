@@ -166,7 +166,7 @@
 .menu-sides{
     font-size: 11px;
 }
-.menu-items__main, .menu-sides{
+.menu-items__main:hover, .menu-sides:hover{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;

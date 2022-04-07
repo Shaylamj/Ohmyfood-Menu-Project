@@ -214,20 +214,8 @@ li {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  animation: 1s ease-in-out;
-  animation-name: reveal-index;
 }
 
-@keyframes reveal-index {
-  0% {
-    transform: translatex(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translatex(0);
-    opacity: 1;
-  }
-}
 @media only screen and (min-width: 1024px) {
   .restaurantcontainer {
     flex-direction: row;
@@ -308,6 +296,8 @@ html, body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  animation: load-content 3s;
+  z-index: 1;
 }
 
 #page {
@@ -316,6 +306,39 @@ html, body {
   max-width: 1440;
 }
 
+.loader {
+  border: 20px solid #f6f6f6;
+  border-top: 20px solid #9356DC;
+  border-radius: 50%;
+  animation: spin 3s linear;
+  animation-fill-mode: forwards;
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  width: 25%;
+  height: 45.5%;
+  z-index: 1000;
+}
+
+@keyframes spin {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    transform: rotate(360deg);
+    visibility: hidden;
+  }
+}
+#showme {
+  animation: load-page 0s 3s forwards;
+  opacity: 0;
+}
+
+@keyframes load-page {
+  to {
+    opacity: 1;
+  }
+}
 a {
   text-decoration: none;
   color: #000;
@@ -567,7 +590,7 @@ footer {
   font-size: 11px;
 }
 
-.menu-items__main, .menu-sides {
+.menu-items__main:hover, .menu-sides:hover {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
