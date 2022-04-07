@@ -1,4 +1,4 @@
-.btn_purple {
+.btn {
     background: $primary;
     background: linear-gradient(0deg, $primary 0%, $secondary 94%);
     cursor: pointer;
@@ -11,6 +11,11 @@
     display: inline-block;
     font-size: $btn-size;
     box-shadow: $box-shadow;
+     
+    &--order{
+        width: 100px;
+        
+  }
 }
 .hiw-btn-all{
     display: flex;
