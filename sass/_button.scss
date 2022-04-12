@@ -14,8 +14,11 @@
      
     &--order{
         width: 100px;
-        
   }
+  &:hover{
+    background: linear-gradient(0deg, lighten($primary,5%) 0%, lighten($secondary,5%)94%);  
+    box-shadow: 0 3px 2px rgba(#000, 0.5);
+}
 }
 .hiw-btn-all{
     display: flex;
@@ -31,6 +34,10 @@
     font-size: $btn-size;
     box-shadow: $box-shadow;
     z-index: 1;
+    @include breakpoint(desktop){
+        text-align: center;
+        width: 70%;
+    }
         
     &--purple{
         background: lighten($primary, 35%)

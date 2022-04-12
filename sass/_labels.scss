@@ -9,8 +9,11 @@
     position:relative;
        left:10px;
        z-index: 2;
-    
 
+       @include breakpoint(desktop){
+           padding: 10px 15px;
+           font-size: 15px;
+       }
 }
 .new-label{
     background: $tertiary;

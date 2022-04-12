@@ -14,17 +14,30 @@ html, body {
     min-width: 320px;
     max-width: 1440;
 }
-.loader {
-    border: 20px solid $background; 
-    border-top: 20px solid $primary;
+// Loading circle //
+
+.loader-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .loader {
+    border: 20px solid #f6f6f6;
     border-radius: 50%;
+    border-top: 20px solid $primary;
+    //* border-image: linear-gradient(to right bottom, #260B3C, #a053df); *//
     animation: spin 3s linear;
     animation-fill-mode: forwards;
-    position: absolute;
     left: 35%;
     top: 35%;
-    width: 25%;
-    height:45.5%;
+    width: 25vw;
+    height: 25vw;
     z-index: 1000;
   }
   
@@ -47,6 +60,7 @@ html, body {
         to   { opacity: 1; }
       }
 
+// end //
 a{
 text-decoration: none;
 color: #000;

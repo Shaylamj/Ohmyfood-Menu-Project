@@ -58,7 +58,19 @@
     width: 90%;
 
 }
+@include breakpoint(desktop){
+    .hiw-blocks_container{
+        @include flex-row;
+    }
+}
 .btn-container{
     @include centreflex;
     
+}
+@include breakpoint(desktop){
+    .hiw-btn-text{
+        font-size: 16px;
+        font-weight: 500;
+        color: darken($background, 75%);
+    }
 }
