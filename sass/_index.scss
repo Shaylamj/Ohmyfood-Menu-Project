@@ -25,6 +25,7 @@ html, body {
     justify-content: center;
     align-items: center;
     position: absolute;
+    animation: hide-loader-cont 3s;
   }
   
   .loader {
@@ -59,7 +60,12 @@ html, body {
       @keyframes load-page {
         to   { opacity: 1; }
       }
+      @keyframes hide-loader-cont {
+        to   {
+           visibility: hidden;
+        }
 
+        }
 // end //
 a{
 text-decoration: none;

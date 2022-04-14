@@ -88,6 +88,35 @@ li {
 }
 
 .fa-heart {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.fa-heart:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 94%);
+  z-index: -1;
+  border-radius: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fill 3s ease-in-out infinite;
+}
+
+@keyframes fill {
+  from {
+    top: 12px;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    top: 0px;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+.fa-heart {
   align-self: center;
   cursor: pointer;
 }
@@ -173,7 +202,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 5%;
+  gap: 8px;
   color: #2a2a2a;
 }
 
@@ -345,6 +374,7 @@ html, body {
   justify-content: center;
   align-items: center;
   position: absolute;
+  animation: hide-loader-cont 3s;
 }
 
 .loader {
@@ -377,6 +407,11 @@ html, body {
 @keyframes load-page {
   to {
     opacity: 1;
+  }
+}
+@keyframes hide-loader-cont {
+  to {
+    visibility: hidden;
   }
 }
 a {
