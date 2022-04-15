@@ -33,6 +33,7 @@ $box-shadow:  0 0.5rem 1.5rem rgba(#000, 0.15) !default;
 
     .block {
         box-shadow :$box-shadow;
+        background-color: white;
         width: 90%;
         margin: 0 auto;
         height: 205px;

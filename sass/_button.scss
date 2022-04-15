@@ -16,7 +16,7 @@
         width: 100px;
   }
   &:hover{
-    background: linear-gradient(0deg, lighten($primary,5%) 0%, lighten($secondary,5%)94%);  
+    background: linear-gradient(0deg, lighten($primary,5%) 0%, lighten($secondary,5%) 94%);  
     box-shadow: 0 3px 2px rgba(#000, 0.5);
 }
 }
@@ -44,31 +44,47 @@
     }
 }
 
-.fa-heart{
+.fa-stack{
     position: relative;
     overflow:hidden;
     z-index: 0;
     }
-.fa-heart:after{
+    .fa-heart{
+        font-size: 20px;
+        padding-left: 2.3px;
+        overflow: hidden;
+    }
+    .fa-stack .fa-shield-heart{
+        color: white;
+    }
+    .fa-stack .fa-heart{
+        font-size: inherit;
+    }
+    .fa-heart::before{
+        border-bottom: 41px solid white;
+        padding:0 10px ;
+
+    }
+.fa-heart:hover:after{
         content: "";
         position: absolute;
-        width: 20px;
-        height:20px;
+        width: 21px;
+        height:21px;
         background:linear-gradient(0deg, $primary 0%, $secondary 94%);;
         z-index:-1;
-        border-radius: 30%;
+        border-radius: 35%;
         
         left: 50%;
         transform: translateX(-50%);
-        animation: fill 3s ease-in-out infinite ;
+        animation: fill 2s ease-in-out forwards;
 }
 @keyframes fill{
     from{
-    top:12px;
+    top:25px;
     transform: translateX(-50%) rotate(0deg);
     }
     to{
-    top:0px;
+    top:8px;
     transform: translateX(-50%) rotate(360deg);
 
     }

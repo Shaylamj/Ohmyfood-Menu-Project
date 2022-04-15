@@ -1,0 +1,31 @@
+@keyframes reveal{
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    to{
+        transform: translateY(0);
+        opacity:1;
+        
+    }   
+}
+.menu-items{
+    animation: 2s all ease ;
+    animation-delay: calc(var(--animation-order) * 100ms);
+    animation-fill-mode: both;
+    animation-name: reveal;
+}
+    &.1{
+        --animation-order: 1;}
+    &.2{--animation-order: 2;}
+    &.3{--animation-order: 3;}
+    &.4{--animation-order: 4;}
+    &.5{--animation-order: 5;}
+    &.6{--animation-order: 6;}
+    &.7{--animation-order: 7;}
+    &.8{--animation-order: 8;}
+    &.9{--animation-order: 9;}
+    &.10{--animation-order: 10;}
