@@ -105,6 +105,7 @@ li {
 
 .fa-stack .fa-heart {
   font-size: inherit;
+  overflow: hidden;
 }
 
 .fa-heart::before {
@@ -115,8 +116,8 @@ li {
 .fa-heart:hover:after {
   content: "";
   position: absolute;
-  width: 21px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 94%);
   z-index: -1;
   border-radius: 35%;
@@ -127,7 +128,7 @@ li {
 
 @keyframes fill {
   from {
-    top: 25px;
+    top: 24px;
     transform: translateX(-50%) rotate(0deg);
   }
   to {
@@ -670,6 +671,7 @@ footer {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    gap: 12px;
   }
 
   .menu-image-cont {
