@@ -48,12 +48,16 @@
     position: relative;
     align-self: start;
     margin-left: 5%;
+    @include breakpoint(desktop){
+        text-align: center;
+    }
 
     &:after{
         content: "";
         @include abs-position (0, 0, -5px, 0);
         width:30px;
         border-bottom:2.5px solid $tertiary;
+
     }
 }
 .menu-items{
@@ -191,7 +195,7 @@
         text-align: center;
         position: relative;
         bottom: 150px;
-        background-color: rgba(255,255,255, 0.9);
+        background-color: #fff;
         border-radius: 25px;
         justify-content: space-evenly
     }

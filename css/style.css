@@ -93,6 +93,15 @@ li {
   z-index: 0;
 }
 
+.menu-stack {
+  margin-top: -8px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu-stack {
+    margin-top: 11px;
+  }
+}
 .fa-heart {
   font-size: 20px;
   padding-left: 2.3px;
@@ -100,9 +109,18 @@ li {
 }
 
 .fa-stack .fa-shield-heart {
-  color: white;
+  color: #fff;
 }
 
+.fa-stack .menu-shield {
+  color: #f6f6f6;
+}
+
+@media only screen and (min-width: 1024px) {
+  .fa-stack .fa-shield-heart {
+    color: white;
+  }
+}
 .fa-stack .fa-heart {
   font-size: inherit;
   overflow: hidden;
@@ -113,6 +131,17 @@ li {
   padding: 0 10px;
 }
 
+.menu-heart::before {
+  border-bottom: 41px solid #f6f6f6;
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .fa-heart::before {
+    border-bottom: 41px solid white;
+    padding: 0 10px;
+  }
+}
 .fa-heart:hover:after {
   content: "";
   position: absolute;
@@ -282,11 +311,8 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #f6f6f6;
-  height: auto;
   gap: 15px;
   width: 100%;
-  padding: 30px 0 30px;
 }
 
 .dsktp-flex-cont {
@@ -302,13 +328,21 @@ li {
 
   .dsktp-flex-cont {
     width: 50%;
-    gap: 5%;
+    gap: 8%;
   }
 }
 .__title {
   padding-left: 20px;
-  background: #f6f6f6;
-  width: 100%;
+  background: transparent;
+}
+
+.restaurants {
+  padding-bottom: 3vh;
+}
+
+#maincards {
+  background-color: #f6f6f6;
+  padding: 30px 0 10%;
 }
 
 .block {
@@ -324,7 +358,7 @@ li {
 
 @media only screen and (min-width: 1024px) {
   .block {
-    height: 30%;
+    height: 35vh;
   }
 }
 .block--image {
@@ -338,7 +372,7 @@ li {
 
 .info {
   margin: auto;
-  margin-top: 5%;
+  padding-top: 2vh;
   width: 93%;
   display: flex;
   flex-direction: row;
@@ -383,7 +417,7 @@ html, body {
 #page {
   margin: 0 auto;
   min-width: 320px;
-  max-width: 1440;
+  max-width: 1440px;
 }
 
 .loader-container {
@@ -402,6 +436,7 @@ html, body {
   border: 20px solid #f6f6f6;
   border-radius: 50%;
   border-top: 20px solid #9356DC;
+  border-image: linear-gradient(to right bottom, #260B3C, #a053df);
   animation: spin 3s linear;
   animation-fill-mode: forwards;
   left: 35%;
@@ -420,7 +455,7 @@ html, body {
     visibility: hidden;
   }
 }
-#showme {
+#content {
   animation: load-page 0s 3s forwards;
   opacity: 0;
 }
@@ -470,7 +505,7 @@ footer {
   flex-direction: column;
   row-gap: 5px;
   margin: 0;
-  padding: 15px 0 30px 15px;
+  padding: 2vw 0 3vw 2vw;
   color: white;
 }
 
@@ -533,6 +568,11 @@ footer {
   position: relative;
   align-self: start;
   margin-left: 5%;
+}
+@media only screen and (min-width: 1024px) {
+  .underline {
+    text-align: center;
+  }
 }
 .underline:after {
   content: "";
@@ -711,7 +751,7 @@ footer {
     text-align: center;
     position: relative;
     bottom: 150px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #fff;
     border-radius: 25px;
     justify-content: space-evenly;
   }

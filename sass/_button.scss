@@ -49,13 +49,30 @@
     overflow:hidden;
     z-index: 0;
     }
+    .menu-stack{
+        margin-top: -8px;
+    }
+    @include breakpoint(desktop){
+        .menu-stack{
+            margin-top: 11px;
+        }
+    }
     .fa-heart{
         font-size: 20px;
         padding-left: 2.3px;
         overflow: hidden;
     }
     .fa-stack .fa-shield-heart{
-        color: white;
+        color: #fff;
+    }
+    .fa-stack .menu-shield{
+        color: $background;
+    }
+
+    @include breakpoint(desktop){
+        .fa-stack .fa-shield-heart {
+            color: white;
+        }
     }
     .fa-stack .fa-heart{
         font-size: inherit;
@@ -63,9 +80,20 @@
     }
     .fa-heart::before{
         border-bottom: 41px solid white;
-        padding:0 10px ;
-
+        padding:0 10px;
     }
+    .menu-heart::before{
+        border-bottom: 41px solid $background;
+        padding:0 10px;
+    }
+    
+    
+    @include breakpoint(desktop){
+        .fa-heart::before{
+                border-bottom: 41px solid white;
+                padding:0 10px;
+            }
+        }
 .fa-heart:hover:after{
         content: "";
         position: absolute;

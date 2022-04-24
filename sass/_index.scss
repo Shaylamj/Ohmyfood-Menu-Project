@@ -12,7 +12,7 @@ html, body {
 #page {
     margin: 0 auto;
     min-width: 320px;
-    max-width: 1440;
+    max-width: 1440px;
 }
 // Loading circle //
 
@@ -32,7 +32,7 @@ html, body {
     border: 20px solid #f6f6f6;
     border-radius: 50%;
     border-top: 20px solid $primary;
-    //* border-image: linear-gradient(to right bottom, #260B3C, #a053df); *//
+    border-image: linear-gradient(to right bottom, #260B3C, #a053df); 
     animation: spin 3s linear;
     animation-fill-mode: forwards;
     left: 35%;
@@ -52,7 +52,7 @@ html, body {
         }
   }
 
-      #showme {
+      #content {
         animation: load-page 0s 3s forwards;
         opacity: 0; 
       }
