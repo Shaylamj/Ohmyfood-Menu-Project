@@ -149,7 +149,7 @@ li {
   height: 20px;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 94%);
   z-index: -1;
-  border-radius: 35%;
+  border-radius: 36%;
   left: 50%;
   transform: translateX(-50%);
   animation: fill 2s ease-in-out forwards;
@@ -392,15 +392,6 @@ li {
 .block__description-name {
   width: 60%;
   margin: 0;
-}
-
-.howitworks-title {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  row-gap: 3px;
-  margin: auto;
-  width: 93%;
 }
 
 html, body {
