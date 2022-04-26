@@ -34,10 +34,6 @@
     font-size: $btn-size;
     box-shadow: $box-shadow;
     z-index: 1;
-    @include breakpoint(desktop){
-        text-align: center;
-        width: 70%;
-    }
         
     &--purple{
         background: lighten($primary, 35%)
