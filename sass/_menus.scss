@@ -127,11 +127,10 @@
     .no9{--animation-order: 9;}
     .no10{--animation-order: 10;}
 
-    @include breakpoint(mobile){
-        .menu-image-cont{
+    .menu-image-cont{
         display: none;
-            }
     }
+
 @include breakpoint(desktop){
     .menu{
         display: flex;
@@ -161,13 +160,14 @@
     }
     .menu-image-cont{
         display: block;
-    }
+
+        }
+    }   
     .menu-image{
         height:400px;
         width: 400px;
 }
 
-}
 .menu-sides{
     font-size: 11px;
 }

@@ -665,11 +665,10 @@ footer {
   --animation-order: 10;
 }
 
-@media only screen and (min-width: 320px) {
-  .menu-image-cont {
-    display: none;
-  }
+.menu-image-cont {
+  display: none;
 }
+
 @media only screen and (min-width: 1024px) {
   .menu {
     display: flex;
@@ -702,12 +701,12 @@ footer {
   .menu-image-cont {
     display: block;
   }
-
-  .menu-image {
-    height: 400px;
-    width: 400px;
-  }
 }
+.menu-image {
+  height: 400px;
+  width: 400px;
+}
+
 .menu-sides {
   font-size: 11px;
 }
