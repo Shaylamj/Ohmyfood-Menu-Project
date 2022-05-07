@@ -17,3 +17,79 @@
     color: #fff;
     margin-left: -1px;
 }
+// HEART ANIMATION //
+
+.fa-stack{
+    position: relative;
+    overflow:hidden;
+    z-index: 0;
+    }
+    .menu-stack{
+        margin-top: -8px;
+    }
+    @include breakpoint(desktop){
+        .menu-stack{
+            margin-top: 11px;
+        }
+    }
+    .fa-heart{
+        font-size: 20px;
+        padding-left: 2.3px;
+        overflow: hidden;
+    }
+    .fa-stack .fa-shield-heart{
+        color: #fff;
+    }
+    .fa-stack .menu-shield{
+        color: $background;
+    }
+
+    @include breakpoint(desktop){
+        .fa-stack .fa-shield-heart {
+            color: white;
+        }
+    }
+    .fa-stack .fa-heart{
+        font-size: inherit;
+        overflow: hidden;
+    }
+    .fa-heart::before{
+        border-bottom: 41px solid white;
+        padding:0 10px;
+    }
+    .menu-heart::before{
+        border-bottom: 41px solid $background;
+        padding:0 10px;
+    }
+    
+    
+    @include breakpoint(desktop){
+        .fa-heart::before{
+                border-bottom: 41px solid white;
+                padding:0 10px;
+            }
+        }
+.fa-heart:hover:after{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height:20px;
+        background:linear-gradient(0deg, $primary 0%, $secondary 94%);;
+        z-index:-1;
+        border-radius: 36%;
+        
+        left: 50%;
+        transform: translateX(-50%);
+        animation: fill 2s ease-in-out forwards;
+}
+@keyframes fill{
+    from{
+    top:24px;
+    transform: translateX(-50%) rotate(0deg);
+    }
+    to{
+    top:8px;
+    transform: translateX(-50%) rotate(360deg);
+
+    }
+}

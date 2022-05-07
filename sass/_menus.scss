@@ -96,6 +96,8 @@
     }
     
 }
+// REVEAL ANIMATION //
+
 @keyframes reveal{
     0% {
         transform: translateY(50px);
@@ -126,6 +128,8 @@
     .no8{--animation-order: 8;}
     .no9{--animation-order: 9;}
     .no10{--animation-order: 10;}
+
+// END //
 
     .menu-image-cont{
         display: none;
@@ -221,6 +225,9 @@
     margin-top: 6%;
     margin-bottom:12%;
 }
+
+//TICK BOX ANIMATION//
+
 .tick-box {
     display: flex;
     justify-content: center;

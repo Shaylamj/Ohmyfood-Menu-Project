@@ -183,6 +183,84 @@ li {
   margin-left: -1px;
 }
 
+.fa-stack {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.menu-stack {
+  margin-top: -8px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu-stack {
+    margin-top: 11px;
+  }
+}
+.fa-heart {
+  font-size: 20px;
+  padding-left: 2.3px;
+  overflow: hidden;
+}
+
+.fa-stack .fa-shield-heart {
+  color: #fff;
+}
+
+.fa-stack .menu-shield {
+  color: #f6f6f6;
+}
+
+@media only screen and (min-width: 1024px) {
+  .fa-stack .fa-shield-heart {
+    color: white;
+  }
+}
+.fa-stack .fa-heart {
+  font-size: inherit;
+  overflow: hidden;
+}
+
+.fa-heart::before {
+  border-bottom: 41px solid white;
+  padding: 0 10px;
+}
+
+.menu-heart::before {
+  border-bottom: 41px solid #f6f6f6;
+  padding: 0 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .fa-heart::before {
+    border-bottom: 41px solid white;
+    padding: 0 10px;
+  }
+}
+.fa-heart:hover:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 94%);
+  z-index: -1;
+  border-radius: 36%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fill 2s ease-in-out forwards;
+}
+
+@keyframes fill {
+  from {
+    top: 24px;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    top: 8px;
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
 .numbers {
   background: #9356DC;
   color: #fff;
